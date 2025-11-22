@@ -53,4 +53,4 @@ const agesSum = ages.reduce((acc, age) => {
   return acc + age;
 }, 0)
 
-console.log(agesSum)
+console.log(agesSum / ages.length)
