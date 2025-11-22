@@ -51,4 +51,11 @@ const authors = books.map(book => book.author)
 
 const areAuthorsAdults = authors.every(author => author.age >= 18)
 
-console.log(areAuthorsAdults)
+authors.sort((ageA, ageB) => {
+  if (areAuthorsAdults) {
+    return ageA.age - ageB.age;
+  }
+  return ageB.age - ageA.age;
+})
+
+console.log(authors)
