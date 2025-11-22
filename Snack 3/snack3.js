@@ -49,4 +49,6 @@ const books = [
 
 const authors = books.map(book => book.author)
 
-console.log(authors)
+const areAuthorsAdults = authors.every(author => author.age >= 18)
+
+console.log(areAuthorsAdults)
