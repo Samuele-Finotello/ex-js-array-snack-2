@@ -49,4 +49,8 @@ const books = [
 
 const ages = books.map(book => book.author.age)
 
-console.log(ages)
+const agesSum = ages.reduce((acc, age) => {
+  return acc + age;
+}, 0)
+
+console.log(agesSum)
