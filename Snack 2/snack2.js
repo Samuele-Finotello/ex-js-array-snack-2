@@ -54,4 +54,6 @@ const discountedBooks = availableBooks.map(discountedBook => {
   return discountedBook;
 })
 
-console.log(discountedBooks)
+const fullPricedBook = discountedBooks.find(book => book.price.includes('.00'))
+
+console.log(fullPricedBook)
