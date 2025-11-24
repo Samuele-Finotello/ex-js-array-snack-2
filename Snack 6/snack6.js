@@ -48,3 +48,7 @@ const books = [
 ];
 
 const areThereAvailableBooks = books.some(book => book.available === true)
+
+const booksByPrice = books.sort((bookA, bookB) => parseFloat(bookA.price) - parseFloat(bookB.price))
+
+console.log(booksByPrice)
