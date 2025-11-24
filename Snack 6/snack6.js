@@ -44,11 +44,13 @@ const books = [
     available: false,
     price: '48€',
     tags: ['html', 'advanced', 'junior', 'mid-senior']
-  },
+  }
 ];
 
 const areThereAvailableBooks = books.some(book => book.available === true)
 
 const booksByPrice = books.sort((bookA, bookB) => parseFloat(bookA.price) - parseFloat(bookB.price))
+
+booksByPrice.sort((bookA, bookB) => bookB.available - bookA.available)
 
 console.log(booksByPrice)
